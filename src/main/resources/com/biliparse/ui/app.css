@@ -1,0 +1,438 @@
+/*
+ * BiliParse 主题样式：bilibili 粉 + 浅灰底 + 白色卡片
+ */
+
+.root {
+    -fx-font-size: 13px;
+    -fx-background-color: #f5f6f8;
+}
+
+/* ---------- 顶部栏 ---------- */
+
+.menu-bar {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #eef0f2 transparent;
+}
+
+/* 菜单栏顶级菜单：圆角淡粉底 hover */
+.menu-bar .menu {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+    -fx-padding: 4 10 4 10;
+}
+
+.menu-bar .menu:hover, .menu-bar .menu:showing {
+    -fx-background-color: #fff0f5;
+}
+
+.menu-bar .menu:hover .label, .menu-bar .menu:showing .label {
+    -fx-text-fill: #fb7299;
+}
+
+.top-bar {
+    -fx-background-color: white;
+    -fx-padding: 12 16 12 16;
+    -fx-border-color: transparent transparent #e6e8eb transparent;
+}
+
+.top-bar .text-field {
+    -fx-background-radius: 18;
+    -fx-background-color: #f2f3f5;
+    -fx-border-radius: 18;
+    -fx-border-color: transparent;
+    -fx-padding: 7 14 7 14;
+}
+
+.top-bar .text-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #fb7299;
+}
+
+/* ---------- 按钮 ---------- */
+
+.button {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #d8dade;
+    -fx-text-fill: #444;
+    -fx-cursor: hand;
+    -fx-padding: 6 14 6 14;
+}
+
+.button:hover {
+    -fx-border-color: #fb7299;
+    -fx-text-fill: #fb7299;
+}
+
+.button.primary {
+    -fx-background-color: #fb7299;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.button.primary:hover {
+    -fx-background-color: #e05580;
+    -fx-text-fill: white;
+}
+
+.button.primary:disabled {
+    -fx-background-color: #f7b8cc;
+}
+
+.button:disabled {
+    -fx-opacity: 0.6;
+}
+
+/* ---------- 卡片 ---------- */
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e6e8eb;
+    -fx-padding: 14;
+}
+
+.cover-placeholder {
+    -fx-background-color: #f2f3f5;
+    -fx-background-radius: 8;
+    -fx-min-width: 320px;
+    -fx-min-height: 180px;
+}
+
+.cover-pane {
+    -fx-background-color: transparent;
+}
+
+.video-title {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212121;
+}
+
+.video-desc {
+    -fx-text-fill: #757575;
+}
+
+/* ---------- 标签页 ---------- */
+
+.tab-pane {
+    -fx-tab-min-width: 96px;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #f5f6f8;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8 8 0 0;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: white;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #757575;
+    -fx-font-size: 14px;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #fb7299;
+    -fx-font-weight: bold;
+}
+
+/* 去掉选中 Tab 的焦点指示线（默认会随焦点出现/消失，观感突兀） */
+.tab-pane .tab .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #f5f6f8;
+}
+
+/* ---------- 表格 ---------- */
+
+.flat-table {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e6e8eb;
+    -fx-table-cell-border-color: transparent;
+}
+
+/* 去掉表格获得焦点时的描边框 */
+.flat-table:focused {
+    -fx-background-color: white;
+}
+
+.flat-table .column-header-background {
+    -fx-background-color: #fafbfc;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.flat-table .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #eef0f2 transparent;
+}
+
+.flat-table .column-header .label {
+    -fx-text-fill: #757575;
+    -fx-font-weight: bold;
+}
+
+.flat-table .table-row-cell {
+    -fx-background-color: white;
+    -fx-cell-size: 32px;
+}
+
+.flat-table .table-row-cell:odd {
+    -fx-background-color: #fafbfc;
+}
+
+.flat-table .table-row-cell:hover {
+    -fx-background-color: #fff0f5;
+}
+
+.flat-table .table-row-cell:selected {
+    -fx-background-color: #ffe4ee;
+}
+
+.flat-table .table-row-cell:selected .text {
+    -fx-fill: #212121;
+}
+
+.flat-table .table-cell {
+    -fx-text-fill: #444;
+}
+
+/* ---------- 下载进度条 ---------- */
+
+.download-bar {
+    -fx-pref-height: 14px;
+    -fx-background-radius: 7;
+}
+
+.download-bar .track {
+    -fx-background-color: #f2f3f5;
+    -fx-background-radius: 7;
+}
+
+.download-bar .bar {
+    -fx-background-color: #fb7299;
+    -fx-background-radius: 7;
+    -fx-background-insets: 0;
+}
+
+.progress-text {
+    -fx-font-size: 11px;
+    -fx-text-fill: #555;
+}
+
+/* ---------- 底部操作区与状态栏 ---------- */
+
+.action-bar {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e6e8eb;
+    -fx-padding: 10 14 10 14;
+}
+
+.status-bar {
+    -fx-background-color: white;
+    -fx-padding: 6 16 6 16;
+    -fx-border-color: #eef0f2 transparent transparent transparent;
+}
+
+.status-text {
+    -fx-text-fill: #757575;
+}
+
+.qr-hint {
+    -fx-font-size: 14px;
+    -fx-text-fill: #444;
+}
+
+/* ---------- 其他控件 ---------- */
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #d8dade;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+}
+
+/* ---------- 数字调节器（Spinner） ---------- */
+
+.spinner {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #d8dade;
+}
+
+.spinner:focused {
+    -fx-border-color: #fb7299;
+}
+
+.spinner .text-field, .spinner .text-field:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+}
+
+/* 上调/下调按钮：去掉默认的灰底方块，只留箭头 */
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-padding: 0 5 0 5;
+}
+
+.spinner .increment-arrow-button:hover, .spinner .decrement-arrow-button:hover {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.spinner .increment-arrow, .spinner .decrement-arrow {
+    -fx-background-color: #999;
+}
+
+.spinner .increment-arrow-button:hover .increment-arrow,
+.spinner .decrement-arrow-button:hover .decrement-arrow {
+    -fx-background-color: #fb7299;
+}
+
+.check-box .box {
+    -fx-background-radius: 4;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #fb7299;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.alert, .dialog-pane {
+    -fx-background-color: white;
+}
+
+/* ---------- 滚动条：细条、圆角、隐藏两端箭头 ---------- */
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-pref-width: 11px;
+}
+
+.scroll-bar:horizontal {
+    -fx-pref-height: 11px;
+}
+
+.scroll-bar .track, .scroll-bar .track-background {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 6;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #d3d6dc;
+    -fx-background-radius: 6;
+    -fx-background-insets: 2;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #b8bcc4;
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #fb7299;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 1;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+/* 表格/滚动面板右下角的填充角块 */
+.table-view .corner, .scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+/* ---------- 弹出面板：菜单与下拉列表 ---------- */
+
+.context-menu {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e6e8eb;
+    -fx-padding: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 16, 0, 0, 4);
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+    -fx-padding: 6 14 6 14;
+}
+
+.menu-item .label {
+    -fx-text-fill: #444;
+}
+
+.menu-item:hover, .menu-item:focused {
+    -fx-background-color: #fff0f5;
+}
+
+.menu-item:hover .label, .menu-item:focused .label {
+    -fx-text-fill: #fb7299;
+}
+
+/* 画质选择下拉列表：同样圆角化 */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #e6e8eb;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 12, 0, 0, 3);
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #444;
+    -fx-padding: 6 12 6 12;
+}
+
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: #fff0f5;
+    -fx-text-fill: #fb7299;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #ffe4ee;
+    -fx-text-fill: #fb7299;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #999;
+}
+
+.combo-box:hover .arrow, .combo-box:showing .arrow {
+    -fx-background-color: #fb7299;
+}
