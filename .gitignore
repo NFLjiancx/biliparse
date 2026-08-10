@@ -1,0 +1,12 @@
+# 构建产物
+target/
+dependency-reduced-pom.xml
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 系统杂项
+*.log
+.DS_Store
