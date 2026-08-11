@@ -395,10 +395,10 @@ public class MainApp extends Application {
 
         Region coverPlaceholder = new Region();
         coverPlaceholder.getStyleClass().add("cover-placeholder");
-        // 16:9 封面区域，与视频封面比例一致
-        coverPlaceholder.setPrefSize(320, 180);
-        coverView.setFitWidth(320);
-        coverView.setFitHeight(180);
+        // 16:9 封面区域，与视频封面比例一致（缩小尺寸，为剧集列表留出更多纵向空间）
+        coverPlaceholder.setPrefSize(200, 113);
+        coverView.setFitWidth(200);
+        coverView.setFitHeight(113);
         coverView.setPreserveRatio(true);
         StackPane coverPane = new StackPane(coverPlaceholder, coverView);
         coverPane.getStyleClass().add("cover-pane");
