@@ -97,8 +97,8 @@
 .cover-placeholder {
     -fx-background-color: #f2f3f5;
     -fx-background-radius: 8;
-    -fx-min-width: 320px;
-    -fx-min-height: 180px;
+    -fx-min-width: 200px;
+    -fx-min-height: 113px;
 }
 
 .cover-pane {
