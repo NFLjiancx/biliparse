@@ -2,9 +2,9 @@
 
 一个基于 **JavaFX** 的 Bilibili 视频下载桌面工具：粘贴链接即可解析，支持扫码登录、多集批量下载、DASH 音视频自动混流，界面采用 bilibili 粉主题，简洁轻量。
 
-![pic1](/assets/pic1.png)
+![pic1](./assets/pic1.png)
 
-![pic2](/assets/pic2.png)
+![pic2](./assets/pic2.png)
 
 ## 功能特性
 
